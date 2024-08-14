@@ -1,0 +1,11 @@
+:root {
+    --color-red: #ec0911;
+}
+
+.bg-red {
+    background: var(--color-red);
+}
+
+.col-md-6 .text-danger {
+    color: #ec0911;
+}

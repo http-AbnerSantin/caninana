@@ -10,3 +10,6 @@ body {
     object-fit: cover;
 }
 
+.text-bold {
+    font-weight: 600;
+}
