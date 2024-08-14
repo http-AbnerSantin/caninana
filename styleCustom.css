@@ -1,11 +1,23 @@
 :root {
     --color-red: #ec0911;
+    --cinza: #fafafa;
+
 }
 
 .bg-red {
     background: var(--color-red);
 }
 
+.text-vermelho {
+    color: var(--color-red);
+}
+
+
 .col-md-6 .text-danger {
     color: #ec0911;
 }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+  }
