@@ -1,27 +1,64 @@
 :root {
     --color-red: #ec0911;
     --cinza: #fafafa;
-
 }
-
 .bg-red {
     background: var(--color-red);
 }
-
 .text-vermelho {
     color: var(--color-red);
 }
-
-
 .col-md-6 .text-danger {
     color: #ec0911;
 }
-
 .img-fluid {
     max-width: 100%;
     height: auto; /* Mantém a proporção da imagem */
   }
-
   .custom-size {
-    max-width: 300px;
+    max-width: 400px;
+    box-sizing: border-box;
+    
   }
+  .item-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ajusta o espaçamento entre os itens flexíveis */
+    box-sizing: border-box; /* Inclui padding e bordas no tamanho total do elemento */
+  }
+  
+.image-container {
+    flex: 1; /* Faz o container da imagem ocupar todo o espaço restante */
+    display: flex; /* Permite o alinhamento da imagem dentro do container */
+} 
+  .img-loja {
+    width: 100%; /* Faz a imagem ocupar toda a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem cubra todo o container sem distorção */
+    display: block; /* Remove o espaço embaixo da imagem */
+    border-radius: 5px;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 40px;
+}
+.endereco {
+    margin: 10px 0px 5px 0px;
+}
+.endereco a {
+    border-bottom: 1px solid transparent;
+}
+.endereco:hover a  {
+    border-bottom: 1px solid black;
+}
+.telefone a {
+    border-bottom: 1px solid transparent;
+}
+.telefone:hover a {
+    border-bottom: 1px solid black;
+}
+
+  

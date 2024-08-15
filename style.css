@@ -17,8 +17,11 @@ body {
     max-height: 500px;
     object-fit: cover;
 }
-
 .text-bold {
+    font-weight: 700;
+}
+.text-bold-500 {
+    font-weight: 500;
     font-weight: 700;
 }
 .m-0 {
