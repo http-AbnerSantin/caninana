@@ -70,7 +70,7 @@ const listaDeLojas = [
         foto: "lojas/MiguelRosa-Pi"
     },
     {
-        nome: "Teresina-Pi",
+        nome: "Timon-Ma",
         endereco: "Av. Pres. Médici, 670 - Centro, Timon - MA, 65630-020",
         enderecoURL: "https://www.google.com/maps/place/Caninana+Motos+Timon/@-5.0937427,-42.8330412,15z/data=!4m2!3m1!1s0x0:0x808eff8b3ff2da80?sa=X&ved=1t:2428&ictx=111",
         telefone: "(86) 99942-5503",
@@ -82,10 +82,11 @@ const listaDeLojas = [
 const container = document.getElementsByClassName("teste")[0];
 
 container.innerHTML = '';
+const styleLi = 'item-list gap-5 bg-white rounded-3 shadow';
 
 listaDeLojas.forEach(({nome, endereco, enderecoURL, telefone, foto}) => {
     const listaItem = `
-        <li class="item-list gap-5 bg-white rounded-3 shadow">
+        <li class="${styleLi}">
             <div class="textos">
                 <p class="text-vermelho fs-3">${nome}</p>
                 <div class="endereco d-flex gap-2 mb-3">
