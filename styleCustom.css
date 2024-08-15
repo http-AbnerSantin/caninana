@@ -42,7 +42,7 @@
 .textos {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     padding-left: 40px;
 }
 .endereco {
