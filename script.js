@@ -88,7 +88,7 @@ listaDeLojas.forEach(({nome, endereco, enderecoURL, telefone, foto}) => {
         <li class="item-list gap-5 bg-white rounded-3 shadow">
             <div class="textos">
                 <p class="text-vermelho fs-3">${nome}</p>
-                <div class="endereco d-flex gap-2">
+                <div class="endereco d-flex gap-2 mb-3">
                     <img src="icons/location_on_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="icon localizador">
                     <a href="${enderecoURL}" target="_blank" class="fs-6 m-0 text-black" title="Clique para ir para Google Maps">${endereco}</a>
                 </div>
