@@ -27,43 +27,38 @@
     box-sizing: border-box; /* Inclui padding e bordas no tamanho total do elemento */
   }
   
-  .image-container {
+.image-container {
     flex: 1; /* Faz o container da imagem ocupar todo o espaço restante */
     display: flex; /* Permite o alinhamento da imagem dentro do container */
-  }
-  
+} 
   .img-loja {
     width: 100%; /* Faz a imagem ocupar toda a largura do container */
     height: auto; /* Mantém a proporção da imagem */
     object-fit: cover; /* Garante que a imagem cubra todo o container sem distorção */
     display: block; /* Remove o espaço embaixo da imagem */
     border-radius: 5px;
+}
 
-  }
-
-  .textos {
+.textos {
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding-left: 40px;
-  }
-
-  .endereco {
+}
+.endereco {
     margin: 10px 0px 5px 0px;
-  }
-  .endereco a {
+}
+.endereco a {
     border-bottom: 1px solid transparent;
-  }
-  .endereco:hover a  {
+}
+.endereco:hover a  {
     border-bottom: 1px solid black;
-  }
-
+}
 .telefone a {
     border-bottom: 1px solid transparent;
 }
-  .telefone:hover a {
+.telefone:hover a {
     border-bottom: 1px solid black;
-
-  }
+}
 
   
