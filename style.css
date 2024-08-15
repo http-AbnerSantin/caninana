@@ -35,6 +35,25 @@ body {
     padding: 0;
 }
 
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #fff; /* Cor do texto dos links */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave para hover */
+    padding: 10px 15px; /* Espaçamento interno dos links */
+    display: block; /* Faz com que o link ocupe o bloco inteiro */
+    border-bottom: 1px solid transparent; /* Adiciona uma borda transparente na parte de baixo do link */
+}
+
+.menu a:hover {
+    border-bottom: 1px solid white; /* Adiciona uma borda branca na parte de baixo do link */
+    color: black; /* Cor do texto ao passar o mouse */
+    border-radius: 5px; /* Bordas arredondadas para o efeito de hover */
+  }
+
 /* Estilos do Menu Hamburger */
 .hamburger {
     display: none;
