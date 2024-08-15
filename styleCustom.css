@@ -114,9 +114,6 @@
     transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
   }
 
-  .bg-red {
-    background-color: #d2232a;
-  }
 
   .text-white {
     color: #ffffff;
@@ -135,5 +132,13 @@
   footer ul {
     padding: 0;
     list-style-type: none;
+  }
+
+  .col-md-4 .list-unstyled li {
+    margin-bottom: 15px; /* Ajuste o valor conforme necessário */
+  }
+  
+  .col-md-4 .list-unstyled li:last-child {
+    margin-bottom: 0; /* Remove o espaçamento no último item, se desejado */
   }
   /* Footer */
