@@ -75,55 +75,11 @@
     position: relative;
     text-align: center;
   }
-
+  
   .card-content {
     transition: opacity 0.3s ease;
   }
-
-  .card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    display: none;
-  }
-
-  .card:hover .card-content {
-    opacity: 0;
-  }
-
-  .card:hover .card-overlay {
-    display: flex;
-    opacity: 1;
-  }
-
-  .service-icon {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    filter: invert(1);
-    display: block;
-    margin: 0 auto;
-  }
-
-  .card-overlay p {
-    color: #d2232a; /* Substitua "text-vermelho" pela cor vermelha que você deseja */
-    font-size: 16px;
-  }
-
-  .card {
-    position: relative;
-    text-align: center;
-  }
-
-  .card-content {
-    transition: opacity 0.3s ease;
-  }
-
+  
   .card-overlay {
     position: absolute;
     top: 0;
@@ -134,15 +90,46 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     display: none;
+    align-items: center;
+    justify-content: center;
   }
-
+  
   .card:hover .card-content {
     opacity: 0;
   }
-
+  
   .card:hover .card-overlay {
     display: flex;
     opacity: 1;
+  }
+  
+  /* Estilos para ícones */
+  .service-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    filter: invert(1);
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .card-overlay p {
+    color: #ec0911;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 768px) {
+    .card:hover .card-content {
+      opacity: 1;
+    }
+  
+    .card:hover .card-overlay {
+      display: none;
+    }
+    
+    .card .card-overlay {
+      display: none;
+    }
   }
    /* Nossos Serviços */
 
@@ -177,7 +164,6 @@
     padding: 0;
     list-style-type: none;
   }
-  /* Footer */
 
   .col-md-4 .list-unstyled li {
     margin-bottom: 15px; /* Ajuste o valor conforme necessário */
