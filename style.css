@@ -3,7 +3,7 @@
 * {
     list-style: none !important;
     padding: 0px;
-    margin: 0xp;
+    margin: 0px;
     text-decoration: none !important;
 }
 body {
@@ -31,8 +31,6 @@ body {
 /* Estilos do Menu */
 .menu {
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .menu li {
@@ -51,7 +49,7 @@ body {
 .menu a:hover {
     border-bottom: 1px solid white; /* Adiciona uma borda branca na parte de baixo do link */
     color: black; /* Cor do texto ao passar o mouse */
-    border-radius: 5px; /* Bordas arredondadas para o efeito de hover */
+
   }
 
 /* Estilos do Menu Hamburger */
@@ -70,7 +68,6 @@ body {
     background-color: white;
     margin: 4px 0;
 }
-
   /* Efeito de hover para o botão */
   section a:hover {
     background-color: #a91b1f;

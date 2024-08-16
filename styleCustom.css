@@ -16,9 +16,12 @@
     max-width: 100%;
     height: auto; /* Mantém a proporção da imagem */
   }
+
+  .img-inicio {
+    width: 100%;
+  }
   .custom-size {
     max-width: 400px;
-    min-width: 400px !important;
     min-height: 300px;
     box-sizing: border-box;
     
@@ -173,3 +176,7 @@
     margin-bottom: 0; /* Remove o espaçamento no último item, se desejado */
   }
   /* Footer */
+
+
+
+  
