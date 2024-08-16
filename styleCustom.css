@@ -9,11 +9,12 @@
     color: var(--color-red);
 }
 .col-md-6 .text-danger {
-    color: #ec0911;
+    color: var(--color-red);
 }
 
 .letras-espacadas {
-  letter-spacing: 0.1em; /* Ajuste o valor conforme necessário */
+  letter-spacing: 1.5px; /* Ajuste o valor conforme necessário */
+
 }
 
 .img-fluid {
