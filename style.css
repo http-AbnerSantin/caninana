@@ -48,8 +48,7 @@ body {
 }
 
 .menu a:hover {
-    border-bottom: 1px solid white; /* Adiciona uma borda branca na parte de baixo do link */
-    color: black; /* Cor do texto ao passar o mouse */
+    border-bottom: 1px solid white; 
 
   }
 
