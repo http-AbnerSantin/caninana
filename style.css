@@ -70,3 +70,8 @@ body {
     background-color: white;
     margin: 4px 0;
 }
+
+  /* Efeito de hover para o botão */
+  section a:hover {
+    background-color: #a91b1f;
+  }
