@@ -78,24 +78,30 @@ const listaDeLojas = [
     },
 
 ];
-
+const tamanhoDaTela = window.innerWidth;
 const container = document.getElementsByClassName("teste")[0];
-
+const contato = 'CONTATO';
 container.innerHTML = '';
 const styleLi = 'item-list gap-5 bg-white rounded-3 shadow';
 
 listaDeLojas.forEach(({nome, endereco, enderecoURL, telefone, foto}) => {
+    let numero = '';
+    if(tamanhoDaTela > 500) {
+         numero = telefone
+    } else {
+        numero = contato
+    }
     const listaItem = `
         <li class="${styleLi}">
             <div class="textos">
                 <p class="text-vermelho fs-3">${nome}</p>
                 <div class="endereco d-flex gap-2 mb-3">
                     <img src="icons/location_on_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="icon localizador">
-                    <a href="${enderecoURL}" target="_blank" class="fs-6 m-0 text-black" title="Clique para ir para Google Maps">${endereco}</a>
+                    <a href="${enderecoURL}" target="_blank" class=" m-0 text-black" title="Clique para ir para Google Maps">${endereco}</a>
                 </div>
                 <div class="telefone d-flex gap-2">
                     <img src="icons/call_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="icon telefone">
-                    <a href="tel:${telefone}" class="fs-5 m-0 text-black text-bold-500">${telefone}</a>
+                    <a href="tel:${telefone}" class=" m-0 text-black text-bold-500">${numero}</a>
                 </div>
             </div>
             <div>
