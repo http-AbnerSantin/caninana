@@ -12,6 +12,10 @@
     color: #ec0911;
 }
 
+.letras-espacadas {
+  letter-spacing: 0.1em; /* Ajuste o valor conforme necessário */
+}
+
 .img-fluid {
     max-width: 100%;
     height: auto; /* Mantém a proporção da imagem */
