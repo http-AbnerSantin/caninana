@@ -34,7 +34,7 @@
   .item-list {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ajusta o espaçamento entre os itens flexíveis */
+    justify-content: space-between; 
     box-sizing: border-box; /* Inclui padding e bordas no tamanho total do elemento */
   }
   
@@ -75,7 +75,7 @@
     border-bottom: 1px solid black;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .item-list {
     flex-direction: column-reverse;
     justify-content: start;

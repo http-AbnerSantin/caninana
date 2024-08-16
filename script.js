@@ -63,19 +63,20 @@ const listaDeLojas = [
         foto: "lojas/Maranhao-Pi"
     },
     {
-        nome: "Teresina-Pi",
-        endereco: " Av. Miguel Rosa, n° 7500 - Pavimento Superior - Tabuleta, Teresina - PI, 64019-702",
-        enderecoURL: "https://www.google.com/maps?s=web&sca_esv=99e27bbb5f1f1840&lqi=ChdjYW5pbmFuYSBtb3RvcyB0ZXJlc2luYUit58LG_LqAgAhaKxAAEAEYABgBGAIiF2NhbmluYW5hIG1vdG9zIHRlcmVzaW5hKgYIAhAAEAGSAQ9tb3RvcmN5Y2xlX3Nob3CqAT8QATIeEAEiGkt_6Brvdszcv3STcal2jd59dx_xOEmjo4DGMhsQAiIXY2FuaW5hbmEgbW90b3MgdGVyZXNpbmE&phdesc=fHgZALK9py0&vet=12ahUKEwinrofN2veHAxXppJUCHSRGEx8Q1YkKegQIHRAL..i&cs=1&um=1&ie=UTF-8&fb=1&gl=br&sa=X&geocode=KZv4q7OYN44HMfw-3vOFNZOK&daddr=Av.+Miguel+Rosa,+n%C2%B0+7500+-+Pavimento+Superior+-+Tabuleta,+Teresina+-+PI,+64019-702",
-        telefone: "(99) 98140-0602",
-        foto: "lojas/MiguelRosa-Pi"
-    },
-    {
         nome: "Timon-Ma",
         endereco: "Av. Pres. Médici, 670 - Centro, Timon - MA, 65630-020",
         enderecoURL: "https://www.google.com/maps/place/Caninana+Motos+Timon/@-5.0937427,-42.8330412,15z/data=!4m2!3m1!1s0x0:0x808eff8b3ff2da80?sa=X&ved=1t:2428&ictx=111",
         telefone: "(86) 99942-5503",
         foto: "lojas/Timon-Ma"
     },
+    {
+        nome: "Teresina-Pi",
+        endereco: " Av. Miguel Rosa, n° 7500 - Pavimento Superior - Tabuleta, Teresina - PI, 64019-702",
+        enderecoURL: "https://www.google.com/maps?s=web&sca_esv=99e27bbb5f1f1840&lqi=ChdjYW5pbmFuYSBtb3RvcyB0ZXJlc2luYUit58LG_LqAgAhaKxAAEAEYABgBGAIiF2NhbmluYW5hIG1vdG9zIHRlcmVzaW5hKgYIAhAAEAGSAQ9tb3RvcmN5Y2xlX3Nob3CqAT8QATIeEAEiGkt_6Brvdszcv3STcal2jd59dx_xOEmjo4DGMhsQAiIXY2FuaW5hbmEgbW90b3MgdGVyZXNpbmE&phdesc=fHgZALK9py0&vet=12ahUKEwinrofN2veHAxXppJUCHSRGEx8Q1YkKegQIHRAL..i&cs=1&um=1&ie=UTF-8&fb=1&gl=br&sa=X&geocode=KZv4q7OYN44HMfw-3vOFNZOK&daddr=Av.+Miguel+Rosa,+n%C2%B0+7500+-+Pavimento+Superior+-+Tabuleta,+Teresina+-+PI,+64019-702",
+        telefone: "(99) 98140-0602",
+        foto: "lojas/MiguelRosa-Pi"
+    },
+
 
 ];
 const tamanhoDaTela = window.innerWidth;
@@ -84,9 +85,10 @@ const contato = 'CONTATO';
 container.innerHTML = '';
 const styleLi = 'item-list gap-5 bg-white rounded-3 shadow';
 
+
 listaDeLojas.forEach(({nome, endereco, enderecoURL, telefone, foto}) => {
     let numero = '';
-    if(tamanhoDaTela > 500) {
+    if(tamanhoDaTela > 600) {
          numero = telefone
     } else {
         numero = contato
@@ -101,7 +103,7 @@ listaDeLojas.forEach(({nome, endereco, enderecoURL, telefone, foto}) => {
                 </div>
                 <div class="telefone d-flex gap-2">
                     <img src="icons/call_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="icon telefone">
-                    <a href="tel:${telefone}" class=" m-0 text-black text-bold-500">${numero}</a>
+                    <a href="tel:${telefone}" class="m-0 text-black text-bold-500">${numero}</a>
                 </div>
             </div>
             <div>
@@ -110,5 +112,10 @@ listaDeLojas.forEach(({nome, endereco, enderecoURL, telefone, foto}) => {
         </li>`;
 
     container.innerHTML += listaItem;
+
+    window.addEventListener('resize', function() {
+        // Recarrega a página quando o tamanho da janela mudar
+        location.reload();
+    });
 });
 
