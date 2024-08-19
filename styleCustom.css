@@ -79,6 +79,10 @@
     border-bottom: 1px solid black;
 }
 
+.dropdown-menu {
+  border: none;
+}
+
 
 
 @media (max-width: 600px) {
