@@ -94,6 +94,22 @@
     font-size: 12px;
   }
 }
+
+/* Carousel */
+@media (max-width: 576px) {
+  #carouselExampleRide .carousel-inner img {
+      height: 100px; /* Ajuste o tamanho conforme necessário */
+      object-fit: cover; /* Faz com que a imagem cubra toda a altura */
+  }
+}
+
+@media (min-width: 577px) {
+  #carouselExampleRide .carousel-inner img {
+      height: auto; /* Mantém a altura padrão para dispositivos maiores */
+  }
+}
+/* Carousel */
+
   /* Nossos Serviços */
   .card {
     position: relative;
