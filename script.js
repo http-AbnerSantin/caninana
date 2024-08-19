@@ -83,7 +83,7 @@ const tamanhoDaTela = window.innerWidth;
 const container = document.getElementsByClassName("teste")[0];
 const contato = 'CONTATO';
 container.innerHTML = '';
-const styleLi = 'item-list gap-5 bg-white rounded-3 shadow';
+const styleLi = 'item-list gap-5 bg-white rounded-3 shadow mb-5';
 
 
 listaDeLojas.forEach(({nome, endereco, enderecoURL, telefone, foto}) => {
