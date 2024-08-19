@@ -79,6 +79,8 @@
     border-bottom: 1px solid black;
 }
 
+
+
 @media (max-width: 600px) {
   .item-list {
     flex-direction: column-reverse;
