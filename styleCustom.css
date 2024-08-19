@@ -88,11 +88,34 @@
 
   }
   .textos {
-    padding: 0px 10px 20px 10px;
+    padding: 0px 30px 30px 30px;
     gap: 0px;
   }
   .textos a {
     font-size: 12px;
+  }
+
+  .telefone {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-red);
+    border-radius: 5px;
+    justify-content: center;
+  }
+
+  .telefone a{
+    font-size: 16px;
+    align-items: center;
+    color: white !important;
+    padding: 10px 20px;
+  
+  }
+  .telefone:hover a {
+    border-bottom: 1px solid var(--color-red);
+}
+
+  .telefone-icon {
+    display: none;
   }
 }
 

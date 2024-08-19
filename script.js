@@ -102,7 +102,7 @@ listaDeLojas.forEach(({nome, endereco, enderecoURL, telefone, foto}) => {
                     <a href="${enderecoURL}" target="_blank" class=" m-0 text-black" title="Clique para ir para Google Maps">${endereco}</a>
                 </div>
                 <div class="telefone d-flex gap-2">
-                    <img src="icons/call_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="icon telefone">
+                    <img class="telefone-icon" src="icons/call_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="icon telefone">
                     <a href="tel:${telefone}" class="m-0 text-black text-bold-500">${numero}</a>
                 </div>
             </div>
