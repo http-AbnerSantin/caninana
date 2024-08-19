@@ -17,6 +17,10 @@
 
 }
 
+.btn-hamburger {
+  border: none;
+}
+
 .img-fluid {
     max-width: 100%;
     height: auto; /* Mantém a proporção da imagem */
