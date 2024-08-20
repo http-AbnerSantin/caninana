@@ -47,6 +47,7 @@
 
   .atacado div img {
     border-radius: 0 5px 5px 0;
+    max-width: 100%;
   }
 
 /*atacado e varejo fim*/
@@ -157,6 +158,41 @@
 
   .telefone-icon {
     display: none;
+  }
+
+  .atacado {
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: self-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .atacado-info {
+    padding-left: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .atacado-info a {
+    background: var(--color-red);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    
+  }
+  .atacado-info a:hover {
+    background: var(--color-red);
+  } 
+
+  .atacado div img {
+    border-radius: 0 0px 5px 5px;
   }
 }
 
