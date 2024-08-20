@@ -16,7 +16,40 @@
   letter-spacing: 1.5px; /* Ajuste o valor conforme necessário */
 
 }
+/*atacado e varejo*/
+  .container {
+    padding: 0;
+  }
+  .atacado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .atacado-info {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
 
+  .atacado-info a {
+    background: var(--color-red);
+    color: white;
+    padding: 10px 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+    
+  }
+
+  .atacado div img {
+    border-radius: 0 5px 5px 0;
+  }
+
+/*atacado e varejo fim*/
 .btn-hamburger {
   border: none !important;
 }
