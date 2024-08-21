@@ -355,6 +355,26 @@
   height: 0;
   transition: opacity .3s;
   overflow: hidden;
+  display: flex;
+  gap: 10px;
+}
+
+.accoridon-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.accordion-info-naosei {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.accordion-info-naosei a {
+  color: black;
+}
+
+.accordion-img img{
+  max-width: 100%;
 }
 
 .accordionBody.active {
