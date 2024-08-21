@@ -107,7 +107,8 @@ listaDeLojas.forEach(({nome, endereco, enderecoURL, telefone, foto}) => {
                 </div>
                 <div class="accordion-info-naosei btnContato">
                   <img src="icons/call_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24 1.svg" alt="">
-                  <a href="tel:${telefone}">${numero}</a>
+                  <a href="tel:${telefone}">${numero} <i class="fa-solid fa-arrow-right"></i></a>
+                  
                 </div>
               </div>
               <div class="accordion-img">
