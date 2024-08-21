@@ -12,6 +12,10 @@
     color: var(--color-red);
 }
 
+h2 {
+  margin-left: 20px;
+}
+
 .letras-espacadas {
   letter-spacing: 1.5px; /* Ajuste o valor conforme necessário */
 
@@ -319,8 +323,8 @@
  .container-accordion {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 500px;
+  gap: 12px;
+  width: 800px;
  }
 
  .accordionList {
@@ -356,6 +360,7 @@
   transition: opacity .3s;
   overflow: hidden;
   display: flex;
+  justify-content: space-between;
   gap: 10px;
 }
 
@@ -363,14 +368,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 8px;
 }
+
+
 .accordion-info-naosei {
   display: flex;
   align-items: center;
   gap: 5px;
+  padding-left:8px ;
 }
 .accordion-info-naosei a {
   color: black;
+  font-size: 16px;
 }
 
 .accordion-img img{
@@ -391,4 +401,34 @@
   transform: rotate(180deg);
  }
 
+
+ .accordion-img img {
+  max-width: 200px;
+ }
   
+
+ @media (max-width:600px) {
+  .accordionBody {
+    flex-direction: column;
+    align-items: center;
+  }
+  .accordion-img img {
+    width: 200px;
+  }
+  .container-accordion {
+
+    width: 300px;
+   }
+   .accordion-info-naosei {
+    padding-left:0px;
+   }
+   .accordion-info-naosei a {
+    font-size: 10px;
+    border-bottom: 1px var(--color-red) solid;
+    
+  }
+  .accordion-info-naosei img {
+    width: 16px;
+  }
+
+ }
