@@ -121,8 +121,11 @@ listaDeLojas.forEach(({nome, endereco, enderecoURL, telefone, foto}) => {
 });
 
 const accordions = document.querySelectorAll('.accordionList');
+const accordionList = document.querySelectorAll('.accordionList')
+console.log(accordionList)
 
 accordions.forEach(accordion => {
+    
     const header = accordion.querySelector('.accordionHeader');
     const body = accordion.querySelector('.accordionBody');
 

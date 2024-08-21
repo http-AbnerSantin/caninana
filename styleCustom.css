@@ -330,13 +330,13 @@ h2 {
  .accordionList {
   background-color: white;
   border-radius: 5px;
-  padding: 12px;
   cursor: pointer;
+  
+}
 
- }
-
- .accordionHeader {
+.accordionHeader {
   width: 100%;
+  padding: 12px;
   border: none;
   background-color: transparent;
   display: flex;
