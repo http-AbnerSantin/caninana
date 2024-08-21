@@ -378,7 +378,7 @@ h2 {
   gap: 5px;
   padding-left:8px ;
 }
-.accordion-info-naosei a {
+.accordion-info-naosei a, .btnContato {
   color: black;
   font-size: 16px;
 }
@@ -416,16 +416,27 @@ h2 {
     width: 200px;
   }
   .container-accordion {
-
-    width: 300px;
+    width: 350px;
    }
    .accordion-info-naosei {
     padding-left:0px;
+    justify-content: center;
    }
    .accordion-info-naosei a {
     font-size: 10px;
-    border-bottom: 1px var(--color-red) solid;
+  }
+  .btnContato a{
+    padding: 8px 30px;
+    border-radius: 18px;
+    color: white;
+    background: var(--color-red);
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin: 10px 0px;
     
+  }
+  .btnContato img {
+    display: none;
   }
   .accordion-info-naosei img {
     width: 16px;
