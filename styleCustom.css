@@ -41,11 +41,11 @@ h2 {
     background: var(--color-red);
     color: white;
     padding: 10px 40px;
+    letter-spacing: 1.5px;
     border-radius: 30px;
     cursor: pointer;
     align-self: flex-start;
     margin-top: 20px;
-    letter-spacing: 1.5px;
     
   }
 
@@ -332,6 +332,12 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
   
+}
+
+.btn-sobre{
+  border-radius: 30px;
+  padding: 10px 40px;
+  letter-spacing: 1.5px;
 }
 
 .accordionHeader {
